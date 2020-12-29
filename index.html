@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Desperate</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<h1>Desperate Index</h1>
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<h2 class="title">Desperate Index</h2>
+
+			<!-- <input type="text" name="filter" id="filter-table" placeholder="desperate name filter" /> -->
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Slack messages by day</th>
+						<th>Calls By Day</th>
+						<th>Desperate Index</th>
+					</tr>
+				</thead>
+				<tbody id="table-desperate-index">
+					<tr class="desperate">
+						<td class="info-name">Paulo</td>
+						<td class="info-slack-message">100</td>
+						<td class="info-calls-by-day">23</td>
+						<td class="info-desperate-index"></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</section>
+	<section class="container">
+	
+		<h2 id="title-form">Add new person</h2>
+		
+		<ul id="error-msg">
+		</ul>
+		
+		<form id="form-person">
+			<div class="grupo">
+				<label for="name">Name:</label>
+				<input id="name" name="name" type="text" placeholder="type the name's person" class="campo">
+			</div>
+			<div class="grupo">
+				<label for="slack-message">Slack messages by day:</label>
+				<input id="slack-message" name="slackMessage" type="text" placeholder="type how many texts do you receive from the person during the day" class="campo">
+			</div>
+			<div class="grupo">
+				<label for="calls">Calls by day:</label>
+				<input id="calls" name="callsByDay" type="text" placeholder="type how many calls do you receive from the person during the day" class="campo">
+			</div>
+
+			<button id="add-person" class="botao bto-principal">Add</button>
+		</form>
+	</section>
+	</main>
+	<script src="js/desperate-index.js"></script>
+	<script src="js/form.js"></script>
+
+</body>
+
+</html>
